@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color de fondo del rectángulo -->
+    <solid android:color="#E6303030" /> <!-- Color gris oscuro -->
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#4D000000"/> <!-- Color de sombra con transparencia -->
+            <corners android:radius="8dp"/> <!-- Redondeo de las esquinas de la sombra -->
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp"/> <!-- Ajuste de la sombra en cada lado -->
+        </shape>
+    </item>
+</shape>

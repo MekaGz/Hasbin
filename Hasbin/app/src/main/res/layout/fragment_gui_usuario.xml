@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gui_usuario"
+    android:background="@color/hasbin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtBienvenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido"
+                android:fontFamily="@font/ppp"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end">
+                <ImageButton
+                    android:id="@+id/btnPerfil"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/user"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:tint="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"/>
+                <ImageButton
+                    android:id="@+id/btnCampana"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/campana"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    app:tint="@color/yellow" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtSaldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S/00.00"
+                android:fontFamily="@font/ppp"
+                android:textColor="@color/white"
+                android:background="@drawable/redondo"
+                android:layout_gravity="center"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textSize="55dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtMovimientos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Movimientos"
+                android:fontFamily="@font/ppp"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:id="@+id/btnActualizar"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:src="@drawable/actualizar"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:layout_gravity="center"
+                app:tint="@color/white" />
+
+            <Button
+                android:id="@+id/btnVerTodos"
+                android:layout_width="180dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/hasbin"
+                android:paddingLeft="-20dp"
+                android:layout_marginRight="-50dp"
+                android:fontFamily="@font/ppp"
+                android:text="Ver todos"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <!--Aca va una lista, en teoria los siguientes objetos se crean
+         y pushean para arriba a los demas, luego se hara programando-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMovimientos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/fila_movimientos" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Escanear QR"
+                android:fontFamily="@font/ppp"
+                android:textSize="19dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                app:icon="@drawable/qr"
+                android:background="@drawable/redondo"
+                />
+
+            <Button
+                android:id="@+id/btnHasbinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hasbinear"
+                android:fontFamily="@font/ppp"
+                android:textSize="19dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:icon="@drawable/enviar"
+                android:background="@drawable/redondo" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

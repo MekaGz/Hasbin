@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hasbinear_op"
+    android:background="@color/hasbin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnVolver"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/flechaizq"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:layout_marginLeft="20dp"
+                app:tint="@color/white"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Hasbinear a"
+                android:fontFamily="@font/ppp"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/btnX1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/x"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                app:tint="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txtNomHasbinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Hasbulla Magomedov"
+                android:fontFamily="@font/ppp"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtSoles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ppp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="10dp"
+                android:text="S/"
+                android:textColor="@color/white"
+                android:textSize="55dp" />
+
+            <EditText
+                android:id="@+id/editTxtMonto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.00"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ppp"
+                android:textColor="@color/white"
+                android:textSize="55dp"
+                android:inputType="numberDecimal"
+                android:background="@null"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/txtMensajeHasbinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Agregar Mensaje"
+                android:fontFamily="@font/ppplight"
+                android:textColor="@color/blancoop"
+                android:backgroundTint="@color/white"
+                android:textAlignment="center"
+                />
+
+            <Button
+                android:id="@+id/btnHasbinear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasbinear!"
+                android:fontFamily="@font/ppp"
+                android:textSize="19dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                app:icon="@drawable/enviar"
+                android:background="@drawable/redondo" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

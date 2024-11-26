@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hasbin_exitoso"
+    android:background="@color/hasbin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@drawable/pngconfeti"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ppp"
+                android:text="Hasbin"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="60dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:background="@drawable/redondo"
+                android:layout_marginTop="-50dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¡Hasbineaste!"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/ppp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txtSaldoHasbineaste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="S/ 00.00"
+                    android:textColor="@color/white"
+                    android:textSize="50dp"
+                    android:fontFamily="@font/ppp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txtNombreHasbineaste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre Apellido"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/ppp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnCompartir"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/compartir"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/redondo"
+                    android:padding="15dp"
+                    app:tint="@color/white"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Compartir"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/ppplight"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <ImageButton
+                    android:id="@+id/btnVolverInicio"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/casa"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/redondo"
+                    android:padding="15dp"
+                    app:tint="@color/white"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ir a Inicio"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/ppplight"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

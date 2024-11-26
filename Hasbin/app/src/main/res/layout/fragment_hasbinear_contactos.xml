@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hasbinearContactos"
+    android:background="@color/hasbin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/txthasb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Hasbinear"
+                android:fontFamily="@font/ppp"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/btnX2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/x"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:fontFamily="@font/ppplight"
+                android:textColor="@color/blancoop"
+                android:layout_marginLeft="10dp"
+                android:text="Contactos" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/redondo"
+                app:startIconDrawable="@drawable/buscar"
+                app:startIconScaleType="fitStart"
+                app:startIconTint="@color/white"
+                android:hint="  Ingrese el celular o busque el contacto"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtIngresarContacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/ppplight"
+                    android:gravity="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rContactos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/fila_contacto" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
